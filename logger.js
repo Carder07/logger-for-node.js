@@ -117,12 +117,12 @@ log.prototype.log = function(x, y, z) {
                     if (fileName == list[list.length - 1]) {
                         fs.appendFile(location, JSON.stringify({ Massage: x, Time: time.moment(), Error: z }) + "\n", (err, succes) => {
                             if (err) lg(err)
-                            lg('file appending successfull and appended 1')
+                            
                         })
                     } else {
                         fs.appendFile(location, JSON.stringify({ Massage: x, Time: time.moment(), Error: z }) + "\n", (err, succes) => {
                             if (err) lg(err)
-                            lg('file appending successfull and appended')
+                            
                         })
                     }
                 })
